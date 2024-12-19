@@ -77,8 +77,7 @@ class HomeScreen extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-          primary: isOutlined ? Colors.transparent : Colors.white,
-          onPrimary: isOutlined ? Colors.white : Colors.blue[900],
+          foregroundColor: isOutlined ? Colors.white : Colors.blue[900], backgroundColor: isOutlined ? Colors.transparent : Colors.white,
           side: isOutlined ? const BorderSide(color: Colors.white, width: 2) : null,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(30),
