@@ -11,10 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Super Tic Tac Toe',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        fontFamily: 'Poppins',
       ),
       home: const HomeScreen(),
     );
